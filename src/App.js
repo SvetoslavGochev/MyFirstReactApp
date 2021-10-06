@@ -6,10 +6,12 @@ import Lorem from "./components/Lorem";
 
 function App() {
   return (
-    <div>
+    <div className="site-wrapper">
       <Header>Hey this is app component</Header>
 
       <main>
+        <Lorem></Lorem>
+        <Lorem></Lorem>
         <Lorem></Lorem>
         {/* <Lorem>First2</Lorem>
         <Lorem>First3</Lorem> */}

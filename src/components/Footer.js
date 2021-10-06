@@ -1,7 +1,7 @@
 export default function() {
     return (
 
-        <footer><p>React App, All rights reserved &copy;</p></footer>
+        <footer className="foot"><p>React App, All rights reserved &copy;</p></footer>
         
     );
 };
