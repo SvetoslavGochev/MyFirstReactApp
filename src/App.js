@@ -1,16 +1,19 @@
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+
 import "./App.css";
+import Lorem from "./components/Lorem";
 
 function App() {
   return (
     <div>
-      <Header></Header>
+      <Header>Hey this is app component</Header>
 
       <main>
-        ldsfgdfsdsfsd dfgdf
-        dfgfdgfd
-        dfsgfdg
+        <Lorem></Lorem>
+        {/* <Lorem>First2</Lorem>
+        <Lorem>First3</Lorem> */}
+        
       </main>
 
       <Footer></Footer>
