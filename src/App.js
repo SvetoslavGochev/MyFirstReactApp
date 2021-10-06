@@ -1,15 +1,21 @@
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 import "./App.css";
 
 function App() {
-
-  let headingMessage = 'Hello Word another :)';
-
   return (
-      <header>
-          <h1>{headingMessage}</h1>
-          <h2>The bestdfsad</h2>
-      </header>
-  )
+    <div>
+      <Header></Header>
+
+      <main>
+        ldsfgdfsdsfsd dfgdf
+        dfgfdgfd
+        dfsgfdg
+      </main>
+
+      <Footer></Footer>
+    </div>
+  );
 }
 
 export default App;
