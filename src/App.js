@@ -5,6 +5,7 @@ import "./App.css";
 import Lorem from "./components/Lorem";
 import Heading from "./components/Heading";
 import BookList from "./components/BookList";
+import Childrens from "./components/Cildrens"
 
 let booksData = [
   {title: 'Hary Poter1', description : 'Wizard Book1'},
@@ -19,8 +20,9 @@ function App() {
   return (
     <div className="site-wrapper">
 
-      <Heading />
+  <Heading></Heading>
 
+  <Childrens>dfgfdgfd</Childrens>
 
       <BookList  books={booksData} />
 
