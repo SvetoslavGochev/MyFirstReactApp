@@ -12,7 +12,7 @@ class Counter extends Component {
         }
 
         this.resetCounter = this.resetCounter.bind(this);
-//tova e za rezet bez .bind(this);
+//tova e za rezet da e bez , za vsi4ki da ne se pi6e .bind(this);
     }
 
    decrementCounter(e) {

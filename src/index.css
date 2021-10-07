@@ -24,3 +24,7 @@ code {
   text-align: center;
   font-weight: bold;
 }
+
+.selected-book{
+  color: brown;
+}

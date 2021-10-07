@@ -7,13 +7,24 @@ class BookList extends Component {
     super(props);
   }
 
+
+  bookClicked(title) {
+     console.log("The book "+ title + "has been added to library")
+  }
+
   render() {
     return (
       <div className="Book-List">
         <h4>Book Colection</h4>
 
         {this.props.books.map((x) => {
-          return <Book title={x.title} description={x.description} />
+          return <Book
+           title={x.title}
+            description={x.description}
+             //clickHandler={this.bookClicked.bind(this, x.title)} 
+             clickHandler={() => this.bookClicked(x.title)} 
+             //!!!arow funkc darji konteksta na parenta ...nqma sobstven kontext!!!
+             />
         })}
         
         {/* // <Book title={this.props.books[0].title} description="Wizard Book"/>
