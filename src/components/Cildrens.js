@@ -1,9 +1,12 @@
 function Childrens(props) {
 
 return (
-    <p>{props.children}</p>
+    <header>
+        {props.children}
+    </header>
 )
 
 }
 
 export default Childrens;
+//prez childrenite podavame react elementi na komponent

@@ -5,27 +5,27 @@ import "./App.css";
 import Lorem from "./components/Lorem";
 import Heading from "./components/Heading";
 import BookList from "./components/BookList";
-import Childrens from "./components/Cildrens"
+import Childrens from "./components/Cildrens";
+import Counter from "./components/Counter";
 
 let booksData = [
-  {title: 'Hary Poter1', description : 'Wizard Book1'},
-  {title: 'Hary Poter2', description :'Wizard Book2'},
-  {title: 'Hary Poter3', description : 'Wizard Book3'},
-]
-
-
+  { title: "Hary Poter1", description: "Wizard Book1" },
+  { title: "Hary Poter2", description: "Wizard Book2" },
+  { title: "Hary Poter3", description: "Wizard Book3" },
+];
 
 function App() {
-  
   return (
     <div className="site-wrapper">
+      <Heading></Heading>
 
-  <Heading></Heading>
+      <Childrens>
+        <h1>Title1</h1>
+        <h2>Title2</h2>
+      </Childrens>
 
-  <Childrens>dfgfdgfd</Childrens>
-
-      <BookList  books={booksData} />
-
+      <Counter />
+      <BookList books={booksData} />
     </div>
 
     // <div className="site-wrapper">

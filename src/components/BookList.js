@@ -5,7 +5,7 @@ import Book from "./Book";
 class BookList extends Component {
   constructor(props) {
     super(props);
-  };
+  }
 
   render() {
     return (
@@ -13,8 +13,8 @@ class BookList extends Component {
         <h4>Book Colection</h4>
 
         {this.props.books.map((x) => {
-          return <Book title={x.title} description={x.description} />;
-        })};
+          return <Book title={x.title} description={x.description} />
+        })}
         
         {/* // <Book title={this.props.books[0].title} description="Wizard Book"/>
         // <Book title="Harry Poter2" description="Wizard Book2"/>
