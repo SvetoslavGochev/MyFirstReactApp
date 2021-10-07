@@ -8,16 +8,17 @@ class Counter extends Component {
 
         this.state = {
             count: 11,
+            colectionName: 'My Books'
         }
     }
 
     render(){
         return (
            <div className="counter">
-               <h3>Book Counter</h3>
+               <h3>{this.state.colectionName} Count</h3>
+               <button onClick={(e) => this.setState((oldState) => ({count: oldState.count - 1}))}>-</button>
                <span>{this.state.count}</span>
-               <button onClick={(e) => this.setState({count: this.state.count -1})}>-</button>
-               <button onClick={(e) => this.setState({count: this.state.count +1})}>+</button>
+               <button onClick={(e) => this.setState((oldState) => ({count: oldState.count + 1}))}>+</button>
 
            </div>
         );
