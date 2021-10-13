@@ -12,15 +12,15 @@ class Footer extends Component {
     }
 
 
+
     componentDidMount() {
         //izpalnqva se sled kato se zakrepi za darvoto
-        console.log(this.state);
+        console.log("MOUNT zakrepq go za dom darvoto reaktjs koeto e kopie na dom darvoto")
 
-        setTimeout(() => {
-            this.setState=({showFooter: false});
-        } , 25000);
-
-        
+       setTimeout(() => {
+             
+        this.setState({showFooter:false})
+        }, 1000)
     }
 
     render() {
