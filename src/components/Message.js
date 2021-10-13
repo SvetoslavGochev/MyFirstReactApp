@@ -13,21 +13,27 @@ class Message extends Component {
         }
     }
 
-    componentDidMount(){
+    componentDidMount() {
         console.log("MOUNT zakrepq go za dom darvoto reaktjs koeto e kopie na dom darvoto")
 
        setTimeout(() => {
              
-         console.log(this)
+        this.setState({company:"softunix2"})
         }, 1000)
     }
 
-    compot(){
-        console.log('KOMPOT ot ')
+
+    compomemtDidUpdate() { 
+        console.log('componentUpdate ne se polzva po prioncip ')
+    }
+
+    componentWillUnmount() {
+console.log('unMount')
     }
 
     render() {
-        this.compot()
+        
+        
         console.log('2.render')
          return <span>{this.props.text} | {this.state.company}</span>
     }
