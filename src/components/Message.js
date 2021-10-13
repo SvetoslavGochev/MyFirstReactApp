@@ -5,17 +5,31 @@ class Message extends Component {
 
     constructor(props) {
         super(props)
-        console.log('Constructor')
+        console.log('1.Constructor')
+
+
+        this.state = {
+         company: 'Softuni'
+        }
     }
 
     componentDidMount(){
-        console.log("zakrepq go za dom darvoto reaktjs koeto e kopie na dom darvoto")
+        console.log("MOUNT zakrepq go za dom darvoto reaktjs koeto e kopie na dom darvoto")
+
+       setTimeout(() => {
+             
+         console.log(this)
+        }, 1000)
+    }
+
+    compot(){
+        console.log('KOMPOT ot ')
     }
 
     render() {
-
-        console.log('render')
-         return <span>{this.props.text}</span>
+        this.compot()
+        console.log('2.render')
+         return <span>{this.props.text} | {this.state.company}</span>
     }
 }
 
