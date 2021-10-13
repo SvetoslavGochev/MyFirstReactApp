@@ -5,7 +5,8 @@ import Book from "./Book";
 class BookList extends Component {
   constructor(props) {
     super(props);
-  }
+
+ }
 
 
   bookClicked(title) {
@@ -18,7 +19,7 @@ class BookList extends Component {
         <h4>Book Colection</h4>
 
         {this.props.books.map((x) => {
-          return <Book
+          return < Book
            title={x.title}
             description={x.description}
              //clickHandler={this.bookClicked.bind(this, x.title)} 
