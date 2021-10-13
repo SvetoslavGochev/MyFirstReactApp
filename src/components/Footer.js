@@ -1,7 +1,17 @@
-export default function() {
-    return (
+import { Component  } from 'react'
+import Message from "./Message"
 
-        <footer className="foot"><p>React App, All rights reserved &copy;</p></footer>
-        
-    );
-};
+class Footer extends Component {
+
+    constructor(props) {
+        super(props)
+    }
+
+    render() {
+
+     return <Message text='All right reserved &copy' />
+    }
+}
+
+
+export default Footer;

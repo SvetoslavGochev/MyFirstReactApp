@@ -27,6 +27,9 @@ function App() {
 
       <Counter />
       <BookList books={booksData} />
+
+        <Footer /> 
+
     </div>
 
     // <div className="site-wrapper">
