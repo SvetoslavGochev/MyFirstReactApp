@@ -28,7 +28,7 @@ class Footer extends Component {
     //ako this.state.showFooter == true pokaji Message
     // ako e falsi nqma da go pokaje
    console.log(this.props.refreshCount)
-    return (this.props.refreshCount < 1) && <Message text="All right reserved &copy" />;
+    return (this.props.refreshCount == 0)  ? <Message text="All right reserved &copy" /> : null;
 
   //ako e 0 nqma da go pokaje kato stane edno shtgo pokaje
 
