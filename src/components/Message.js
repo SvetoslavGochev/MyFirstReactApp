@@ -14,7 +14,7 @@ class Message extends Component {
     }
 
     componentDidMount() {
-        console.log("MOUNT zakrepq go za dom darvoto reaktjs koeto e kopie na dom darvoto")
+        console.log("COMPONENT MOUNT zakrepq go za dom darvoto reaktjs koeto e kopie na dom darvoto")
 
        setTimeout(() => {
              
@@ -23,12 +23,12 @@ class Message extends Component {
     }
 
 
-    compomemtDidUpdate() { 
-        console.log('componentUpdate ne se polzva po prioncip ')
+    componentDidUpdate() { 
+        console.log('componentUpdate  ')
     }
 
     componentWillUnmount() {
-console.log('unMount')
+       console.log('unMount')
     }
 
     render() {
