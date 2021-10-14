@@ -1,3 +1,6 @@
+import style from './Book.module.css';
+//importvame cssmodula
+
 function Book(props) {
 
   // if (!props.title){
@@ -10,10 +13,10 @@ function Book(props) {
   //ako nqma avtor varni =>
 
   return (
-    <article  >
+    <article  className={style.article}>
       <h3 onClick={props.clickHandler}> {props.title ? <i>{props.title}</i> : <i>'No title'</i>} </h3>
-      <p>{props.description || "Default description"}</p>
-      <p>{author}</p>
+      <p className={style.description}>{props.description || "Default description"}</p>
+      <p className={style.author}>{author}</p>
       
     </article>
   );

@@ -1,0 +1,14 @@
+.article {
+padding: 10px;
+background-color: forestgreen;
+}
+.description{
+    font-style: italic;
+    color: cornsilk;
+    background-color: darkgoldenrod;
+}
+.author {
+    font-weight: bold;
+    color: crimson;
+    background-color: cyan;
+}
