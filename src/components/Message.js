@@ -1,4 +1,5 @@
 import { Component  } from 'react'
+import reactDom from 'react-dom'
 
 
 class Message extends Component {
@@ -32,10 +33,26 @@ class Message extends Component {
     }
 
     render() {
-        
+        //inlinecss
+        // let style ={
+        //   color:'pink',
+        //  fontSize: 44,
+        // };
+        // if(true){
+        //     style.textDecoration = 'underline'
+        // }
+        //dinamic classes
+     let classes = ['default-class'];
+  if(true)
+  {
+      classes.push('selected-book');
+  }
+
         
         console.log('2.render')
-         return <span>{this.props.text} | {this.state.company}</span>
+         return <span className={classes.join(' ')}>{this.props.text} | {this.state.company}</span>
+        //  return <span style={style}>{this.props.text} | {this.state.company}</span>
+         //return <span style={{color:'pink', fontSize: 44}}>{this.props.text} | {this.state.company}</span>
     }
 }
 
