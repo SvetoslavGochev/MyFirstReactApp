@@ -22,7 +22,7 @@ function refreshComponent(WrappedComponent) {
 //podavame props da ne gi izgubim shte gi dade na wraped component
 //kakvito i props da imame shte gi podadem na dolu po verigasta
         render() {
-            return <WrappedComponent {... this.props}/>;
+            return <WrappedComponent {... this.props} refreshCount={this.setState.refreshCount}/>;
         }
     }
 }
