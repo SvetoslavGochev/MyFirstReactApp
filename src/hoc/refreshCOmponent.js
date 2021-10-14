@@ -1,7 +1,7 @@
 import { Component } from "react";
 
 
-function refreshComponent(WrappedComponent, ) {
+function refreshComponent(WrappedComponent,time=2500 ) {
 
     //moje da se varne anoniment class
   return  class  extends Component {
@@ -16,7 +16,7 @@ function refreshComponent(WrappedComponent, ) {
         componentDidMount() {
             setTimeout(() => {
                this.setState({refreshCount: this.state.refreshCount +1})
-            } , 2500)
+            } , time)
         }
 
 //podavame props da ne gi izgubim shte gi dade na wraped component
