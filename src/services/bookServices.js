@@ -5,5 +5,5 @@ function getAll() {
 }
 
 export default {
-    getAll,
+    getAll
 }

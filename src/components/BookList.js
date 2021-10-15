@@ -7,7 +7,7 @@ class BookList extends Component {
     super(props);
 
     this.state = {
-      books: [],
+      books: []
     };
     //  kogato dannite idvat ot van6en sarvar
   }
@@ -26,9 +26,9 @@ class BookList extends Component {
 
   render() {
 
-// if(this.state.books.length == 0 ) {
-//   return <span>Loading books...</span>
-// }
+if(this.state.books.length == undefined ) {
+  return <span>Loading books...</span>
+}
 
     return (
       <div className="Book-List">
